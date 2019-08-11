@@ -6,6 +6,8 @@ set(VERSION_MAJOR 0)
 set(VERSION_MINOR 0)
 set(VERSION_PATCH 0)
 set(VERSION_IDENT "-dev")
+set(VERSION_STRING "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}${VERSION_IDENT}")
+add_compile_definitions(MEMBRANE_VERSION_STRING="${VERSION_STRING}")
 
 # code style
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror -Wall -Wextra -pedantic")
